@@ -40,10 +40,10 @@ def apply_clearance(cart)
   cart
 end
 
-def checkout(cart: [], coupon: [])
-  cart1 = consolidate_cart(cart: cart)
-  cart2 = apply_coupons(cart: cart1, coupons: coupons)
-  cart3 = apply_clearance(cart: cart2)
+def checkout(cart: cart, coupon: cart)
+  cart = consolidate_cart(cart: cart)
+  cart = apply_coupons(cart: cart, coupons: coupons)
+  cart = apply_clearance(cart: cart)
   total = 0
   cart3.each do |item, info|
     binding.pry
