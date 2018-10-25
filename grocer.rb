@@ -43,11 +43,6 @@ end
 def checkout(cart: cart, coupon: coupon)
   
   
-    
-  
-  
-  
-  
   
   
   
