@@ -46,7 +46,8 @@ def checkout(cart: [], coupon: [])
   caft3 = apply_clearance(cart: cart2)
   total = 0
   cart.each do |item, info|
-    total += (info[:price] * info[:count]).to_i
+    binding.pry
+    total += (info[:price] * info[:count])
   end
   if total > 100
     total * 0.9
